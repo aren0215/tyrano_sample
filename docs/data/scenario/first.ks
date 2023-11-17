@@ -1,46 +1,124 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="筋トレ"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「お前は筋トレをしなければならない」[l][r]
 
-メロスは激怒した。[l][r]
+すべての筋肉がお前を呼んでいる。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+お前はオリンピアで優勝することを決意した。[l][r]
 
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_go] →ジムに行く [endlink][r]
+[link target=*tag_not] →行かない [endlink][r]
 [s]
 
-*tag_sleep
+*tag_go
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=jimu.jfif time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+今日は何の日？[l][r]
 
-【 BAD END 】[l][cm]
+[link target=*tag_mune] →胸 [endlink][r]
+[link target=*tag_senaka] →背中 [endlink][r]
+[link target=*tag_kata] →肩 [endlink][r]
+[link target=*tag_ude] →腕 [endlink][r]
+[s]
 
-[jump target=*start]
-
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_mune
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+何する？[l][r]
+[link target=*tag_munesi] →ベンチプレス [endlink][r]
+[link target=*tag_munesi] →ダンベルフライ [endlink][r]
+[s]
+
+*tag_munesi
+
+[cm]
+
+お前は迫り来る重量に耐え切れず大胸筋が張り裂け死ぬ[l][r]
+
+[cm]
 
 [jump target=*start]
+
+*tag_senaka
+
+[cm]
+
+何する？[l][r]
+
+[link target=*tag_senakasi] →チンニング [endlink][r]
+[link target=*tag_senakasi] →デッドリフト [endlink][r]
+[s]
+
+*tag_senakasi
+
+[cm]
+
+お前は重量を支えきれず腰が破壊され死ぬ[l][r]
+
+[cm]
+
+[jump target=*start]
+
+*tag_kata
+
+[cm]
+
+何する？[l][r]
+
+[link target=*tag_katasi] →ショルダープレス [endlink][r]
+[link target=*tag_katasi] →サイドレイズ [endlink][r]
+[s]
+
+*tag_katasi
+
+[cm]
+
+お前はダンベルの重量に関節が耐え切れず方が外れて死ぬ[l][r]
+
+[cm]
+
+[jump target=*start]
+
+*tag_ude
+
+[cm]
+
+何する？[l][r]
+
+[link target=*tag_udesi] →アームカール [endlink][r]
+[link target=*tag_udesi] →ナロープレス [endlink][r]
+[s]
+
+*tag_udesi
+
+[cm]
+
+お前は重量を持ち上げられず腕が千切れ死ぬ[l][r]
+
+[jump target=*start]
+
+
+
+
+*tag_not
+
+[cm]
+
+ジムに行かない？[l][r]
+
+ちょっと何言ってるか理解できない。[l][r]
+
+[link target=*tag_go] →ジムに行く [endlink][r]
+[link target=*tag_go] →ジムに行く [endlink][r]
+[s]
+
+
